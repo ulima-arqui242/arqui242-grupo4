@@ -1,6 +1,7 @@
 # Proyecto Grupal - Arquitectura de Software
 
 ## Tabla de Contenido
+- [0 Integrantes](./0/0.md)
 - [1 Caso de Negocio](./1/1.md)
   - [1.1 Generalidades](./1/1.1/1.1.md)
   - [1.2 Modelo de Negocio](./1/1.2/1.2.md)
