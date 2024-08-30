@@ -19,6 +19,6 @@ Aprender mucho sobre arquitectura de software ya que lo veo como un factor impor
 
 Como un profesional que esté ganando mucha plata en una empresa conocido, ojalá en una empresa internacional como Apple o Google. Además, que mis acciones tengan peso y hagan la diferencia.
 
-[Ver integrantes](../integrantes.md)
+[Ver integrantes](../0.md)
 
-[Regresar al índice](../../proyecto.md)
+[Regresar al índice](../../README.md)
