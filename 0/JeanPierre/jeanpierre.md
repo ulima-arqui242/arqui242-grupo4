@@ -15,6 +15,6 @@ Espero profundizar en el desarrollo de software con un enfoque en la creación d
 Me visualizo trabajando para una empresa internacional de forma remota, liderando equipos de desarrollo de software y asegurando el cumplimiento de las normativas de la empresa.
 
 
-[Ver integrantes](../integrantes.md)
+[Ver integrantes](../0.md)
 
-[Regresar al índice](../../proyecto.md)
+[Regresar al índice](../../README.md)

@@ -6,7 +6,7 @@ Soy Sebastián Camayo y estoy en la carrera de ingeniería de sistemas. Actualme
 
 Mi expectativa del curso es que veo a aprender bastante sobre las arquitecturas que utilizaré en posibles futuros proyectos tanto en web como móvil. También, en 10 años me veo trabajando en un equipo de desarrollo de software que tengan la misma pasion en crear cosas nuevas.
 
-[Ver integrantes](../integrantes.md)
+[Ver integrantes](../0.md)
 
-[Regresar al índice](../../proyecto.md)
+[Regresar al índice](../../README.md)
 
