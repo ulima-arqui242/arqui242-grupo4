@@ -1,0 +1,82 @@
+### USUARIOS #########################################
+
+POST http://localhost:3000/api/usuario
+Content-Type: application/json
+
+{
+    "nombre": "Manuel",
+    "apellidos": "Ramos",
+    "email": "manu@gmail.com",
+    "password": "123"
+}
+
+###
+
+POST http://localhost:3000/api/usuario/login
+Content-Type: application/json
+
+{
+    "email": "sebas@gmail.com",
+    "password": "123"
+}
+
+###
+
+GET http://localhost:3000/api/usuario
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjUwNzU3Mzc4YzE3ZTY5Njg3Y2ViZGViMTlkMDA2ZGQ5IiwiaWF0IjoxNzI3ODI0ODExLCJleHAiOjE3Mjc4MzIwMTF9.1Lmi5-NozRCVuw3EwextCYhYvfpnCIOcDLkoJY676Rk
+
+###
+
+DELETE http://localhost:3000/api/usuario/
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjUwNzU3Mzc4YzE3ZTY5Njg3Y2ViZGViMTlkMDA0Y2NhIiwiaWF0IjoxNzI3NzMwNzAwLCJleHAiOjE3Mjc3Mzc5MDB9.g8yNC6mQpWhvx4_I_Hf9CNWBNw-4ZqiYtIM8_s70T9g
+
+###
+
+PUT http://localhost:3000/api/usuario/
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjUwNzU3Mzc4YzE3ZTY5Njg3Y2ViZGViMTlkMDA0Y2NhIiwiaWF0IjoxNzI3NzMwNzAwLCJleHAiOjE3Mjc3Mzc5MDB9.g8yNC6mQpWhvx4_I_Hf9CNWBNw-4ZqiYtIM8_s70T9g
+Content-Type: application/json
+
+{
+    "nombre": "Pepe"
+}
+
+### RESERVAS ######################################
+
+GET http://localhost:3000/api/reservas/user
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjUwNzU3Mzc4YzE3ZTY5Njg3Y2ViZGViMTlkMDA2ZGQ5IiwiaWF0IjoxNzI3ODI0ODExLCJleHAiOjE3Mjc4MzIwMTF9.1Lmi5-NozRCVuw3EwextCYhYvfpnCIOcDLkoJY676Rk
+
+###
+
+GET http://localhost:3000/api/reservas
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjUwNzU3Mzc4YzE3ZTY5Njg3Y2ViZGViMTlkMDA2ZGQ5IiwiaWF0IjoxNzI3NzUwMjU3LCJleHAiOjE3Mjc3NTc0NTd9.PQCsk8XpMqwApjPRLfkEPx2TGhZ7_7FvWzDiCGdLdYA
+
+###
+
+GET http://localhost:3000/api/reservas/50757378c17e69687cebdeb19d007318
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjUwNzU3Mzc4YzE3ZTY5Njg3Y2ViZGViMTlkMDA2ZGQ5IiwiaWF0IjoxNzI3ODI0ODExLCJleHAiOjE3Mjc4MzIwMTF9.1Lmi5-NozRCVuw3EwextCYhYvfpnCIOcDLkoJY676Rk
+
+###
+
+POST http://localhost:3000/api/reservas
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjUwNzU3Mzc4YzE3ZTY5Njg3Y2ViZGViMTlkMDA2ZGQ5IiwiaWF0IjoxNzI3ODI0ODExLCJleHAiOjE3Mjc4MzIwMTF9.1Lmi5-NozRCVuw3EwextCYhYvfpnCIOcDLkoJY676Rk
+Content-Type: application/json
+
+{
+    "estado": "confirmada",
+    "detalles": "Departamento 112 ubicado en la avenida plablito123"
+}
+
+###
+
+DELETE http://localhost:3000/api/reservas/0d1760b3f55c620cd45740661200194d
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjUwNzU3Mzc4YzE3ZTY5Njg3Y2ViZGViMTlkMDA0Y2NhIiwiaWF0IjoxNzI3NzMwNzAwLCJleHAiOjE3Mjc3Mzc5MDB9.g8yNC6mQpWhvx4_I_Hf9CNWBNw-4ZqiYtIM8_s70T9g
+
+###
+
+PUT http://localhost:3000/api/reservas/reserva1
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjUwNzU3Mzc4YzE3ZTY5Njg3Y2ViZGViMTlkMDA0Y2NhIiwiaWF0IjoxNzI3NzMwNzAwLCJleHAiOjE3Mjc3Mzc5MDB9.g8yNC6mQpWhvx4_I_Hf9CNWBNw-4ZqiYtIM8_s70T9g
+Content-Type: application/json
+
+{
+    "estado": "cancelada"
+}
