@@ -1,8 +1,6 @@
 # Juan José Alva Larios
 ## Estudiante de Ingeniería de Sistemas
 
-![Juan Alva](juan.jpg)
-
 ## ¿Cual es mi experiencia en desarrollo de software?
 
 Todavía no tengo experiencia laboral en desarrollo de software. Sin embargo, he desarrollado proyectos académicos y, en mi tiempo libre he realizado de algunos proyectos personales. Teniendo experiencia en el desarrollo de aplicaciones web y móvil. Además, cuento con experiencia en el uso de metodologías ágiles como SCRUM.
