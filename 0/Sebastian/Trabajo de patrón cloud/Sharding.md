@@ -20,3 +20,6 @@ La solución es la de dividir estos almacenes de datos de manera horizontal para
 ## Aplicación en el trabajo grupal
 
 Esta es una gran opción para mejorar la disponibilidad de los datos del proyecto. Se pueden generar instancias de particiones de la base de datos y utilizar contenedores que creen particiones distintas para fragmentar la información y mejorar la disponibilidad.
+
+### Link del codigo de la demo
+[Link del repositorio con la demo](https://github.com/Seboot2002/booking-rest-api-express-mongodb)
