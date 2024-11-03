@@ -4,18 +4,19 @@ En primer lugar, el problema que se busca resolver es el de la escalabilidad y e
 
 La solución es la de dividir estos almacenes de datos de manera horizontal para mejorar el rendimiento por la distribución de la carga de las transacciones. En este caso, las particiones deben de tener un mismo esquema. Asimismo, se usan distintas estrategias como:
 
-- **Lookup**: Utiliza un mapa para dirigir las solicitudes al fragmento correcto.
+- **Lookup**: La estrategia de lookup se basa en mantener una tabla de mapeo que asocia cada conjunto de datos con su shard correspondiente. Esta tabla actúa como un directorio que deja al sistema identificar rápidamente dónde se encuentra la información solicitada. Su flexibilidad la convierte en una opción atractiva, especialmente para sistemas que ya tienen una estructura establecida.
 
 <br>
 
 ![Sebastian Camayo](lookup.png)
-- **Range**: Agrupa elementos relacionados en el mismo fragmento y los ordena por clave de fragmento.
+
+- **Range**: La técnica de range organiza los datos en shards según rangos de claves que resulta en una estructura más coherente cuando los datos se presentan en un orden natural dependiendo de la id de shard que agregues. Esto permite realizar consultas de rango de manera eficiente mejorando el rendimiento en operaciones si se establece un valor unico y que así deja acceder a conjuntos de datos específicos. No obstante, es importante tener en cuenta que si un rango determinado recibe una gran cantidad de transacciones va a provocar congestiones en el shard correspondiente; por eso, deben ser valores más unicos al no tener la mayoria el mismo valor.
 
 <br>
 
 ![Sebastian Camayo](range.png)
 
-- **Hash**: Distribuye los datos uniformemente para evitar puntos calientes.
+- **Hash**: La estrategia de hash se enfoca en distribuir los datos de manera uniforme a través de los shards utilizando funciones de hash que asignan cada registro a un shard específico basado en su valor hash. Este enfoque ayuda a evitar puntos calientes al repartir la carga de trabajo que mejora la eficiencia de las operaciones de lectura y escritura. Sin embargo, la desventaja de esta estrategia es que las consultas que requieren acceder a rangos de datos pueden ser más complicadas, ya que la distribución no sigue un orden secuencial, ya que al estar hasheadas estas ya no pertenecen a un rango de datos parecidos sino que se vuelven más uniformes.
 
 <br>
 
