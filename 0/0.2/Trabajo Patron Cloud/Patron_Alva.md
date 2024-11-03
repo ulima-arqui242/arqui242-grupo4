@@ -22,7 +22,7 @@ Es un patrón de comunicación que descentraliza la lógica del flujo de trabajo
 
 Los servicios colaboran con otros componentes mediante el envío de respuestas en base a eventos, tomando decisiones autónomas sobre las acciones a ejecutar en función a dichos eventos. Esto evita que los servicios tengan que depender directamente de otros.
 
-## Solución
+## Solución que brinda
 
 Como cualquier patrón de diseño Cloud, este cuenta con beneficios al ser implementado:
 
