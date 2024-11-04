@@ -52,3 +52,6 @@ A partir de aquí se realizaría la llamada api para poder realizar un post, get
 
 ### Link del codigo de la demo
 [Link del repositorio con la demo](https://github.com/Seboot2002/booking-rest-api-express-mongodb)
+
+### Link del video de la demo
+[Link del video de la demo](https://www.youtube.com/watch?v=sYdQEVId95g&ab_channel=Sebasti%C3%A1nCamayo)
