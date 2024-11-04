@@ -51,6 +51,8 @@ También, para comprobar la conexión de toda la arquitectura se usan los micros
 A partir de aquí se realizaría la llamada api para poder realizar un post, get, delete o update en el sistema de su preferencia, pero siguiendo las rutas especificadas en el microservicio.
 
 ### Link del codigo de la demo
+En este repositorio se utiliza la carpeta "microservice-arquitecture".
+
 [Link del repositorio con la demo](https://github.com/Seboot2002/booking-rest-api-express-mongodb)
 
 ### Link del video de la demo
