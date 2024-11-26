@@ -67,6 +67,27 @@ El patrón Refresh-Ahead es una estrategia que trata de prevenir cache misses y 
 
 ---
 
+### Aplicación dentro del proyecto
+
+Se debe activar un servicio en Windows o Linux. En este caso redis solo funciona con linux, 
+pero si deseas usar windows se puede usar la extension wsl que se instala con el comando.
+
+```
+wsl --install
+```
+
+Luego, puedes instalar el servicio de redis y activarlo para que puedas acceder a un cliente.
+
+![redis wsl](wsl-redis.png)
+
+Aunque en este caso de va a realizar en contenedores docker; por lo que, ya se instala una instancia de redis y otra la cual de manera modular se va a ir desarrollando un api para la administracion del cache.
+
+![docker](docker.png)
+
+En este caso se implementó la estrategia **Cahe-Aside**. Por eso, al momento de que se accede al cache se intenta obtener la data de la base de datos de capital, entonces si no encuentra el dato que se desea en el cache va a crear el dato dentro de cache para que cuando se vuelva a acceder se haga la mitad de rapido a comparación de acceder a la base de datos de manera normal.
+
+![Testing](testing.png)
+
 ### Link del código de la demo
 En este repositorio se utiliza la carpeta "microservice-arquitecture".
 
