@@ -92,3 +92,6 @@ En este caso se implementó la estrategia **Cahe-Aside**. Por eso, al momento de
 En este repositorio se utiliza la carpeta "microservice-arquitecture".
 
 [Link del repositorio con la demo](https://github.com/Seboot2002/booking-rest-api-express-mongodb)
+
+# Acceso al video
+[Link del video de presentación](https://www.youtube.com/watch?v=o81U9q_Fnpw)
