@@ -104,7 +104,7 @@ backstop approve
 
 Para la demostración se tuvo una plataforma web desarrollada en React JS y se mostrará cómo funciona BackstopJS al cambiar variables de diseño CSS de la plataforma web.
 
-\[URL DEL VIDEO\]
+[URL DE LA DEMOSTRACIÓN EN VIDEO](https://youtu.be/bNpgrxhE3gY)
 
 ## Referencias
 
