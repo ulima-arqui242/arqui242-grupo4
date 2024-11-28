@@ -53,7 +53,7 @@ Existen diversas herramientas disponibles para desarrollar pruebas de regresión
 - **Percy:** Una plataforma basada en la nube que se puede integrar con diversos frameworks de prueba. Automatiza y proporciona un panel visual para revisar y aprobar los cambios en las interfaces probadas.
 - **BackstopJS:** Una herramienta de código abierto, basada en nodos que captura y compara capturas de pantalla, generando informes interactivos en HTML con las diferencias encontradas.
 - **Applitools:** Esta herramienta aplica IA que identifica diferencias en capturas de pantalla para detectar errores visuales. Además, cuenta con una plataforma web para mostrar los resultados obtenidos.
-- **Espectro:** Una herramienta basada en ruby que utiliza PhantomJS o SlimerJS para capturar y comparar capturas de pantalla, y genera una galería de imágenes con superposiciones de diferencias.
+- **Wraith:** Una herramienta basada en ruby que utiliza PhantomJS o SlimerJS para capturar y comparar capturas de pantalla, y genera una galería de imágenes con superposiciones de diferencias.
 - **Cypress:** Utilizando la extensión de cypress-image-snapshot, esta herramienta de pruebas permite integrar pruebas de regresión visual a la par que sus pruebas funcionales.
 
 ## Consideraciones Técnicas
@@ -62,31 +62,43 @@ Para la demostración, se hará uso de BackstopJS para conocer los cambios de es
 
 Revise que tiene node y npm al revisar la versión de ambos, de dar error indica que hubo un error de instalación o similar.
 
+~~~
 node -v
 
 npm -v
+~~~
 
 BackstopJS se puede instalar de forma global para que este paquete pueda ser usado en cualquier proyecto web que tengas. Corriendo el siguiente código lo instalarás globalmente:
 
+~~~
 npm install -g backstopjs
+~~~
 
 Una vez tengas instalado el paquete BackstopJS en tu computadora, puedes inicializar Backstop en el proyecto que prefieras, esto utilizando el siguiente comando:
 
+~~~
 backstop init
+~~~
 
 Por defecto, se crean diversos archivos dentro de tu proyecto, incluyendo archivos de Playwright y Puppeteer. Además, crea el archivo de configuración “backstop.json” en el que debes especificar las dimensiones de las vistas que quieres probar (viewports) para poder iniciar el proceso de comparación. En el mismo archivo puedes colocar los escenarios (scenarios) que indique la url de las páginas que Backstop debe probar.
 
 Utilizando el siguiente comando, permite tomar capturas de las páginas expuestas en los escenarios, para poder usarlas como punto de comparación con los próximos cambios que hagas.
 
+~~~
 backstop reference
+~~~
 
 Cuando haya terminado el proceso de tomar bitmaps de referencia, se utiliza el comando test para comparar los cambios de diseño que se hayan realizado con la referencia. Después de haber ejecutado el comando, Backstop creará un informe HTML en el que mostrará visualmente las diferencias.
 
+~~~
 backstop test
+~~~
 
 En caso el diseño haya cambiado y realmente los cambios son correctos conforme a lo que se intenta estructurar en la página, se utiliza el comando approve para indicar a backstop que la versión actual de las páginas las tome como nuevas referencias.
 
+~~~
 backstop approve
+~~~
 
 ## Demostración
 
